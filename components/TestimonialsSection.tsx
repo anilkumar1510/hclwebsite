@@ -98,7 +98,7 @@ const TestimonialsSection = () => {
               transition={{ delay: 0.3 }}
               className="text-xl md:text-2xl text-gray-700 text-center mb-8 italic"
             >
-              "{testimonials[currentTestimonial].quote}"
+              &ldquo;{testimonials[currentTestimonial].quote}&rdquo;
             </motion.blockquote>
 
             <motion.div

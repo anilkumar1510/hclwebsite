@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import Image from 'next/image';
 
 interface Card {
   id: number;
@@ -374,7 +373,7 @@ const PopulationSection = () => {
             <p className="text-gray-600 max-w-3xl mx-auto">
               Maya is feeling overwhelmed by work, caregiving, and sleep trouble. She opens the Headspace 
               app and connects with Ebb, the AI companion. Ebb listens patiently and responds with 
-              empathy, helping Maya feel seen as she describes what she's going through. Ebb then guides 
+              empathy, helping Maya feel seen as she describes what she&apos;s going through. Ebb then guides 
               her through a calming breathing exercise, followed by a short clinical assessment.
             </p>
           </motion.div>

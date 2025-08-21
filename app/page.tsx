@@ -26,12 +26,12 @@ export default function Home() {
 
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
-      link.addEventListener('click', handleSmoothScroll as any);
+      link.addEventListener('click', handleSmoothScroll as EventListener);
     });
 
     return () => {
       links.forEach(link => {
-        link.removeEventListener('click', handleSmoothScroll as any);
+        link.removeEventListener('click', handleSmoothScroll as EventListener);
       });
     };
   }, []);
