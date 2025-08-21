@@ -144,7 +144,7 @@ const MicrostepsSection = () => {
                             setCurrentStep(index);
                           }}
                           className={`h-2 rounded-full transition-all duration-300 ${
-                            index === currentStep ? 'w-8 bg-orange-500' : 'w-2 bg-gray-300'
+                            index === currentStep ? 'w-8 bg-[#0066CC]' : 'w-2 bg-gray-300'
                           }`}
                           whileHover={{ scale: 1.2 }}
                         />
@@ -190,7 +190,7 @@ const MicrostepsSection = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-6 py-3 bg-orange-500 text-white rounded-full font-medium hover:bg-orange-600 transition-colors"
+                className="px-6 py-3 bg-[#0066CC] text-white rounded-full font-medium hover:bg-[#0052A3] transition-colors"
               >
                 Learn more
               </motion.button>

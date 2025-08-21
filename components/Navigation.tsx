@@ -42,8 +42,23 @@ const Navigation = () => {
           transition={{ delay: 0.2 }}
           className="flex items-center space-x-2"
         >
-          <Link href="/" className="text-2xl font-bold text-gray-900">
-            lyra
+          <Link href="/" className="flex items-center">
+            <div className="flex flex-col">
+              <div className="flex items-center">
+                {/* HCL Logo */}
+                <div className="relative">
+                  <div className="bg-[#0066CC] px-4 py-1.5 skew-x-[-20deg]">
+                    <span className="text-white font-bold text-2xl italic skew-x-[20deg] inline-block">HCL</span>
+                  </div>
+                </div>
+                {/* Healthcare Text */}
+                <span className="ml-3 text-2xl font-bold text-[#0066CC] tracking-wide">HEALTHCARE</span>
+              </div>
+              {/* Tagline */}
+              <div className="mt-1">
+                <span className="text-sm text-[#0066CC] tracking-wider">Making Corporate India Healthier</span>
+              </div>
+            </div>
           </Link>
         </motion.div>
 
@@ -57,7 +72,7 @@ const Navigation = () => {
             >
               <Link
                 href={item.href}
-                className="text-gray-700 hover:text-orange-500 transition-colors duration-200 font-medium"
+                className="text-gray-700 hover:text-[#0066CC] transition-colors duration-200 font-medium"
               >
                 {item.label}
               </Link>
@@ -74,14 +89,14 @@ const Navigation = () => {
           >
             <Link
               href="#"
-              className="text-orange-500 hover:text-orange-600 font-medium transition-colors"
+              className="text-[#0066CC] hover:text-[#0052A3] font-medium transition-colors"
             >
               Member login
             </Link>
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
+              className="bg-[#0066CC] hover:bg-[#0052A3] text-white px-6 py-2.5 rounded-full font-medium transition-all duration-200 shadow-lg hover:shadow-xl"
             >
               Request a demo
             </motion.button>
@@ -131,7 +146,7 @@ const Navigation = () => {
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="block py-2 text-gray-700 hover:text-orange-500 transition-colors"
+                  className="block py-2 text-gray-700 hover:text-[#0066CC] transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.label}
@@ -140,11 +155,11 @@ const Navigation = () => {
               <div className="pt-4 border-t space-y-3">
                 <Link
                   href="#"
-                  className="block text-orange-500 hover:text-orange-600 font-medium"
+                  className="block text-[#0066CC] hover:text-[#0052A3] font-medium"
                 >
                   Member login
                 </Link>
-                <button className="w-full bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-medium transition-all">
+                <button className="w-full bg-[#0066CC] hover:bg-[#0052A3] text-white px-6 py-2.5 rounded-full font-medium transition-all">
                   Request a demo
                 </button>
               </div>

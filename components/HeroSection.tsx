@@ -12,19 +12,19 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-50 via-white to-blue-50">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-blue-50 via-white to-sky-50">
       <div className="absolute inset-0">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 0.1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="absolute top-20 right-20 w-96 h-96 bg-orange-300 rounded-full blur-3xl"
+          className="absolute top-20 right-20 w-96 h-96 bg-blue-300 rounded-full blur-3xl"
         />
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 0.1 }}
           transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
-          className="absolute bottom-20 left-20 w-96 h-96 bg-blue-300 rounded-full blur-3xl"
+          className="absolute bottom-20 left-20 w-96 h-96 bg-sky-300 rounded-full blur-3xl"
         />
       </div>
 
@@ -57,9 +57,9 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <motion.button
-            whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(251, 146, 60, 0.3)" }}
+            whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(0, 102, 204, 0.3)" }}
             whileTap={{ scale: 0.95 }}
-            className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-200 shadow-xl flex items-center gap-2"
+            className="bg-[#0066CC] hover:bg-[#0052A3] text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-200 shadow-xl flex items-center gap-2"
           >
             Request a demo
           </motion.button>
@@ -67,7 +67,7 @@ const HeroSection = () => {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="text-gray-700 hover:text-orange-500 font-semibold text-lg flex items-center gap-2 transition-colors"
+            className="text-gray-700 hover:text-[#0066CC] font-semibold text-lg flex items-center gap-2 transition-colors"
           >
             Take a tour
             <motion.div
