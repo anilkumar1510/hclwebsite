@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
@@ -43,22 +44,14 @@ const Navigation = () => {
           className="flex items-center space-x-2"
         >
           <Link href="/" className="flex items-center">
-            <div className="flex flex-col">
-              <div className="flex items-center">
-                {/* HCL Logo */}
-                <div className="relative">
-                  <div className="bg-[#0066CC] px-4 py-1.5 skew-x-[-20deg]">
-                    <span className="text-white font-bold text-2xl italic skew-x-[20deg] inline-block">HCL</span>
-                  </div>
-                </div>
-                {/* Healthcare Text */}
-                <span className="ml-3 text-2xl font-bold text-[#0066CC] tracking-wide">HEALTHCARE</span>
-              </div>
-              {/* Tagline */}
-              <div className="mt-1">
-                <span className="text-sm text-[#0066CC] tracking-wider">Making Corporate India Healthier</span>
-              </div>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="HCL Healthcare"
+              width={280}
+              height={80}
+              priority
+              className="h-auto w-auto max-h-12 md:max-h-16"
+            />
           </Link>
         </motion.div>
 
