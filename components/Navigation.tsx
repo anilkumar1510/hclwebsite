@@ -20,6 +20,7 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
+    { label: 'Benefits', href: '/benefits' },
     { label: 'Our Approach', href: '#approach' },
     { label: 'Our Results', href: '#results' },
     { label: 'Resources', href: '#resources' },
